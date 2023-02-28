@@ -1,0 +1,15 @@
+# .nosana-ci.yml
+nosana:
+  description: Nosana Blank Template
+
+global:
+  image: alpine:latest
+
+  trigger:
+    branch:
+      - main
+
+jobs:
+  - name: Create README
+    commands:
+      - echo NOSANA_NODE
